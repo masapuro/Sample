@@ -1,0 +1,237 @@
+@media (max-width: 560px) {
+  /* スライド画像 */
+  .slick-list {
+    height: 310px;
+  }
+  .slick-slider {
+    height: 360px;
+  }
+  .slick-slide img {
+    height: 300px;
+  }
+  .rice-slider-right {
+    bottom: 235px;
+    width: 70px;
+    height: 160px;
+    left: 49%;
+  }
+  .rice-slider-left {
+    width: 70px;
+    height: 160px;
+    bottom: 235px;
+  }
+  .rice-slider-right p,
+  .rice-slider-left p {
+    font-size: 16px;
+  }
+  .slick-dots {
+    margin: 12px 0 12px 24%;
+  }
+  .fa-arrow-left,
+  .fa-arrow-right {
+    font-size: 24px;
+    top: 24%;
+  }
+  /* 美味しいお米 */
+  .rice-contact {
+    height: 850px;
+  }
+  .im-ri-history {
+    flex-direction: column;
+  }
+  .image-content {
+    width: 80%;
+    height: 332px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .image-content img {
+    width: 300px;
+    height: 300px;
+    margin-top: 5%;
+  }
+  .content-rice-history {
+    width: 100%;
+  }
+  /* お米のご注文 */
+  .order {
+    height: 1980px;
+  }
+  .order p,
+  .contact-sab {
+    margin: 40px 30px;
+  }
+  .content-uo-tuya,
+  .content-uonuma,
+  .price-uo-tuya,
+  .order-uo-tuya {
+    flex-direction: column;
+    width: 100%;
+  }
+  .pr-uonuma,
+  .pr-tuya {
+    font-size: 13px;
+    width: 340px;
+    height: 148px;
+    margin: 31px auto 24px;
+  }
+  .price-tuya span,
+  .price-uonuma span {
+    padding-right: 16px;
+  }
+  .contact-rice {
+    width: 350px;
+  }
+  .content-uo-tuya,
+  .price-uo-tuya {
+    height: 816px;
+  }
+  /* 店舗検索 */
+  .access {
+    height: 780px;
+  }
+  .access-all {
+    flex-direction: column;
+  }
+  .access-all table {
+    width: 98%;
+    margin-top: 48px;
+  }
+  .goodle-map iframe {
+    width: 396px;
+    height: 316px;
+  }
+  /* お問い合わせ */
+  .contact-form table {
+    width: 386px;
+  }
+  .contact-form th,
+  .contact-form input,
+  select,
+  textarea {
+    font-size: 16px;
+    width: 164px;
+    height: 24px;
+  }
+}
+@media (min-width: 561px) and (max-width: 959px) {
+  /* スライド画像 */
+  .slick-list {
+    height: 360px;
+  }
+  .slick-slider {
+    height: 432px;
+  }
+  .slick-slide img {
+    height: 352px;
+  }
+  .rice-slider-right {
+    bottom: 280px;
+    width: 96px;
+    height: 224px;
+    left: 58%;
+  }
+  .rice-slider-left {
+    width: 96px;
+    height: 224px;
+    bottom: 280px;
+  }
+  .rice-slider-right p,
+  .rice-slider-left p {
+    font-size: 24px;
+  }
+  .slick-dots {
+    margin: 12px 0 12px 35%;
+  }
+  .fa-arrow-left,
+  .fa-arrow-right {
+    font-size: 30px;
+    top: 34%;
+  }
+  /* 美味しいお米 */
+  .rice-contact {
+    height: 850px;
+  }
+  .im-ri-history {
+    flex-direction: column;
+  }
+  .image-content {
+    width: 54%;
+    height: 400px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .image-content img {
+    width: 340px;
+    height: 340px;
+    margin-top: 7%;
+  }
+  .content-rice-history {
+    width: 100%;
+  }
+  /* お米のご注文 */
+  .order {
+    height: 2160px;
+  }
+  .order p,
+  .contact-sab {
+    margin: 40px 72px;
+  }
+  .content-uo-tuya,
+  .content-uonuma,
+  .price-uo-tuya,
+  .order-uo-tuya {
+    flex-direction: column;
+    width: 100%;
+  }
+  .pr-uonuma,
+  .pr-tuya {
+    font-size: 16px;
+    width: 474px;
+    height: 190px;
+    margin: 40px auto 24px;
+  }
+  .price-tuya span,
+  .price-uonuma span {
+    padding-right: 16px;
+  }
+  .price-uonuma, .price-tuya {
+    width: 640px;
+    height: 180px;
+    margin: 0 auto;
+  }
+  .contact-rice {
+    width: 640px;
+  }
+  .content-uo-tuya,
+  .price-uo-tuya {
+    height: 940px;
+  }
+  /* 店舗検索 */
+  .access {
+    height: 872px;
+  }
+  .access-all {
+    flex-direction: column;
+  }
+  .access-all table {
+    width: 98%;
+    margin-top: 56px;
+  }
+  .goodle-map iframe {
+    width: 560px;
+    height: 400px;
+  }
+  /* お問い合わせ */
+  .contact-form table {
+    width: 524px;
+  }
+  .contact-form th,
+  .contact-form input,
+  select,
+  textarea {
+    font-size: 20px;
+    width: 196px;
+    height: 30px;
+  }
+}
