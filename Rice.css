@@ -1,0 +1,460 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3 li {
+  font-family: serif;
+}
+li {
+  list-style: none;
+}
+#top h1 {
+  font-family: serif;
+  line-height: 56px;
+  margin: 12px 0 16px 6px;
+}
+#top img {
+  float: left;
+}
+#wrapper {
+  display: block;
+  margin: 0 5%;
+  height: 40px;
+  cursor: pointer;
+  background: #666;
+  text-align: center;
+  position: relative;
+}
+#wrapper span {
+  display: block;
+  position: absolute; /* .navToggleに対して */
+  width: 30px;
+  border-bottom: solid 3px #eee;
+  -webkit-transition: 0.35s ease-in-out;
+  -moz-transition: 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+  left: 6px;
+}
+#wrapper span:nth-child(1) {
+  top: 9px;
+}
+
+#wrapper span:nth-child(2) {
+  top: 18px;
+}
+
+#wrapper span:nth-child(3) {
+  top: 27px;
+}
+
+#wrapper span:nth-child(4) {
+  border: none;
+  color: #eee;
+  font-size: 12px;
+  font-weight: bold;
+  top: 12px;
+  width: 128px;
+  padding-left: 32px;
+}
+#wrapper.active span:nth-child(1) {
+  top: 18px;
+  left: 6px;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+/* 2番目と3番目のspanを45度に */
+#wrapper.active span:nth-child(2),
+#wrapper.active span:nth-child(3) {
+  top: 18px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+/* ボタンの中のメニューの内容 */
+nav#introduce {
+  background: #fff;
+  color: #000;
+  margin: 0 5%;
+  display: none;
+}
+nav#introduce ul {
+  background: #333333;
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+}
+nav#introduce ul li {
+  font-size: 1.1em;
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+  height: 48px;
+  border-bottom: 1px dotted #333;
+}
+nav#introduce ul li:last-child {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+nav#introduce ul li a {
+  display: block;
+  color: #eee8aa;
+  font-size: 14px;
+  line-height: 20px;
+  text-decoration: none;
+  border: solid 1px #eee8aa;
+  padding: 1em 0 1em 48px;
+}
+/* スライド画像 */
+.slick-list {
+  height: 500px;
+}
+.slick-slider {
+  height: 560px;
+  width: 100%;
+}
+.fa-arrow-left {
+  color: #fff;
+  position: absolute;
+  font-size: 40px;
+  top: 38%;
+  opacity: 0.7;
+  z-index: 5;
+  left: 11%;
+}
+.fa-arrow-right {
+  color: #fff;
+  position: absolute;
+  top: 38%;
+  font-size: 40px;
+  opacity: 0.7;
+  right: 11%;
+  z-index: 5;
+}
+.slick-slide:focus {
+  outline: none;
+}
+.slick-slide img {
+  margin: 0 auto;
+}
+.slick-dots > li > button {
+  display: none;
+}
+.slick-dots {
+  height: 40px;
+  margin: 12px 0 12px 39%;
+}
+.slick-dots > li {
+  width: 16px;
+  height: 16px;
+  background: rgb(145, 145, 145);
+  border-radius: 50%;
+  float: left;
+  margin-left: 32px;
+}
+
+.slick-dots > li.slick-active {
+  background: #000;
+}
+.rice-slider {
+  display: flex;
+}
+.rice-slider-left {
+  width: 136px;
+  height: 400px;
+  writing-mode: vertical-rl;
+  position: relative;
+  bottom: 440px;
+  left: 14%;
+}
+.rice-slider-left p {
+  font-family: serif;
+  font-weight: 900;
+  font-size: 40px;
+  text-shadow: 2px 2px 2px #fff;
+  margin-left: 12px;
+}
+.rice-slider-right {
+  width: 136px;
+  height: 400px;
+  writing-mode: vertical-rl;
+  position: relative;
+  bottom: 440px;
+  left: 64%;
+  z-index: 10;
+}
+.rice-slider-right p {
+  font-family: serif;
+  font-weight: 900;
+  font-size: 40px;
+  text-shadow: 2px 2px 2px #fff;
+  margin-left: 12px;
+}
+/* 美味しいお米 */
+.rice-contact {
+  width: 100%;
+  height: 780px;
+  border-top: 1px solid #e9e3d3;
+  padding-top: 60px;
+}
+.rice-contact h2 {
+  font-size: 32px;
+  text-shadow: 2px 2px 2px #ffff99;
+  margin-left: 2%;
+}
+.rice-contact p {
+  font-family: serif;
+  font-weight: 900;
+  font-size: 24px;
+  margin: 2%;
+  border-bottom: 4px solid #fdd700;
+}
+.im-ri-history {
+  display: flex;
+}
+.image-content {
+  width: 40%;
+  height: 500px;
+  text-align: center;
+  background-color: #bbbbbb;
+  margin-left: 4%;
+}
+.image-content img {
+  margin-top: 10%;
+}
+.content-rice-history {
+  width: 50%;
+  height: 400px;
+  padding: 40px 0 32px 64px;
+}
+.content-rice-history h3 {
+  font-size: 24px;
+  color: #ff1a6f;
+}
+.content-rice-history dt {
+  font-size: 16px;
+  width: 80%;
+}
+/* お米のご注文 */
+.order {
+  width: 100%;
+  height: 1300px;
+  border-top: 1px solid #e9e3d3;
+  padding-top: 60px;
+}
+.order h2 {
+  font-size: 32px;
+  margin-left: 2%;
+  text-shadow: 2px 2px 2px #ffff99;
+}
+.order h3 {
+  font-family: serif;
+  font-weight: 900;
+  font-size: 24px;
+  margin: 2%;
+  border-bottom: 4px solid #fdd700;
+}
+.order p {
+  font-family: serif;
+  text-align: center;
+  font-size: 24px;
+  height: 80px;
+  line-height: 76px;
+  margin: 40px 108px;
+  border-top: 4px double #ff0000;
+  border-bottom: 4px double #ff0000;
+}
+.order-uo-tuya {
+  display: flex;
+  justify-content: space-around;
+}
+.content-uo-tuya,.price-uo-tuya {
+  /* display: flex; */
+  width: 500px;
+  height: 1120px;
+
+}
+.content-uonuma {
+  text-align: center;
+}
+.content-tuya {
+  text-align: center;
+}
+.pr-uonuma,.pr-tuya {
+  font-size: 16px;
+  width: 400px;
+  height: 216px;
+  margin: 80px auto 24px; 
+}
+.price-tuya li,.price-uonuma li {
+ display: flex;
+ justify-content: space-between;
+}
+.price-tuya input,.price-uonuma input {
+  /* margin-left: 174px; */
+  border-radius: 3px;
+}
+.price-tuya span, .price-uonuma span {
+  padding-right: 40px;
+}
+.price-uonuma {
+  width: 50%;
+  height: 100px;
+  margin: 0 40px 0 48px;
+}
+.price-uonuma li {
+  margin-bottom: 40px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #777777;
+}
+.price-tuya {
+  width: 50%;
+  height: 100px;
+}
+.price-tuya {
+  width: 50%;
+  height: 100px;
+  margin: 0 40px 0 48px;
+}
+.price-tuya li {
+  margin-bottom: 40px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #777777;
+}
+.contact-rice {
+  width: 450px;
+}
+/* 店舗検索 */
+.access {
+  width: 100%;
+  height: 660px;
+  border-top: 1px solid #e9e3d3;
+  padding-top: 60px;
+}
+.access h2 {
+  font-size: 32px;
+  margin-left: 2%;
+  text-shadow: 2px 2px 2px #ffff99;
+}
+.access-all {
+  display: flex;
+}
+.access-all table {
+  margin-top: 108px;
+  margin-left: 1.5%;
+  border: solid 2px #ff0000;
+  width: 48%;
+  height: 32px;
+  border-collapse: collapse;
+}
+.access-all td {
+  border: solid 2px #ff0000;
+  height: 70px;
+  width: 96px;
+  padding-left: 8px;
+  font-family: monospace;
+  font-size: 16px;
+}
+.access-all th {
+  border: solid 2px #ff0000;
+  height: 70px;
+  text-align: left;
+  padding-left: 24px;
+  font-family: monospace;
+  font-size: 16px;
+}
+.goodle-map {
+  margin: 12px auto 0;
+}
+/* お問い合わせ */
+.contact {
+  width: 100%;
+  height: 1040px;
+  padding-top: 60px;
+  color: #5a5c5f;
+  border-top: 1px solid #e9e3d3;
+}
+.contact-title {
+  font-size: 32px;
+  margin-left: 2%;
+  text-shadow: 2px 2px 2px #ffff99;
+}
+.contact-sab {
+  font-family: serif;
+  text-align: center;
+  font-size: 24px;
+  height: 80px;
+  line-height: 76px;
+  margin: 40px 108px;
+  border-top: 4px double #ff0000;
+  border-bottom: 4px double #ff0000;
+}
+.contact-form {
+  text-align: center;
+}
+.contact-form table {
+  width: 700px;
+  text-align: center;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+.contact-form tr {
+  height: 96px;
+  border-bottom: solid 2px #bbbbbb;
+}
+.contact-form th {
+  font-size: 24px;
+  font-family: serif;
+}
+.contact-form input,
+select {
+  font-size: 15px;
+  width: 300px;
+  height: 32px;
+  padding: 2px 4px;
+}
+textarea {
+  width: 300px;
+  height: 72px;
+}
+input.submit-button {
+  margin-top: 64px;
+  height: 48px;
+}
+.submit-button {
+  margin-top: 20px;
+  font-size: 18px;
+  width: 80px;
+}
+/* フッター */
+footer {
+  width: 100%;
+  height: 120px;
+  background-color: #deb887;
+}
+footer p {
+  text-align: center;
+  padding-top: 32px;
+}
+footer a {
+  font-size: 20px;
+}
+.contact-sns {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 16px;
+}
+.contact-sns img {
+  position: relative;
+  top: 8px;
+}
+.ic_fb {
+  width: 150px;
+}
+.ic_tw {
+  width: 150px;
+}
