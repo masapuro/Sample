@@ -442,13 +442,15 @@ footer p {
 }
 footer a {
   font-size: 20px;
+  font-family: serif;
 }
 .contact-sns {
   display: flex;
   justify-content: space-around;
   padding-top: 16px;
 }
-.contact-sns img {
+.contact-sns i {
+  font-size: 32px;
   position: relative;
   top: 8px;
 }
